@@ -1,0 +1,9 @@
+apiVersion: loc.palpark.me/v1alpha1
+kind: ServerTopology
+metadata:
+  labels:
+    app.kubernetes.io/name: loc-server
+    app.kubernetes.io/managed-by: kustomize
+  name: servertopology-sample
+spec:
+  # TODO(user): Add fields here

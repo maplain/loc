@@ -1,0 +1,23 @@
+# permissions for end users to view servertopologies.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  labels:
+    app.kubernetes.io/name: loc-server
+    app.kubernetes.io/managed-by: kustomize
+  name: servertopology-viewer-role
+rules:
+- apiGroups:
+  - loc.palpark.me
+  resources:
+  - servertopologies
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - loc.palpark.me
+  resources:
+  - servertopologies/status
+  verbs:
+  - get

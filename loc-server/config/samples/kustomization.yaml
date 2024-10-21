@@ -1,0 +1,4 @@
+## Append samples of your project ##
+resources:
+- loc_v1alpha1_servertopology.yaml
+# +kubebuilder:scaffold:manifestskustomizesamples
